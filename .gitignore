@@ -7,3 +7,6 @@ __pycache__/
 .env
 *.csv
 *.txt
+*.png
+pairplot.png
+Health-Tweets/

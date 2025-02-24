@@ -64,7 +64,7 @@ X = data[["Humidity"]]      # влажность
 y = data["Apparent Temperature (C)"]    # ощущаемая температура
 
 # Разбиваем данные на тренировочную и тестовую выборки (train_test_split)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=50)
 
 # Обучаем модель линейной регрессии, используя LinearRegression из Scikit-learn
 model = LinearRegression()
@@ -100,7 +100,7 @@ plt.show()
 X2 = data[["Humidity", "Wind Speed (km/h)"]]
 
 # Разбиваем данные
-X2_train, X2_test, y_train, y_test = train_test_split(X2, y, test_size=0.2, random_state=42)
+X2_train, X2_test, y_train, y_test = train_test_split(X2, y, test_size=0.2, random_state=50)
 
 # Обучаем новую модель
 model2 = LinearRegression()
